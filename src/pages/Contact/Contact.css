@@ -1,0 +1,71 @@
+.app__contact {
+  padding: 1.3rem 3.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */
+  min-height: calc(100vh - 169px);
+}
+
+.app__contact h1 {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 1.3rem;
+}
+
+.app__contact-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .app__contact-form {
+    width: 100%;
+  }
+  .app__contact {
+    padding: 1.3rem 0rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app__contact {
+    padding: 0;
+  }
+
+  .app__contact h1 {
+    font-size: 2rem;
+  }
+}

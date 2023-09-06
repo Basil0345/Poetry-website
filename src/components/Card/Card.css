@@ -1,0 +1,41 @@
+.app__card {
+  margin: 0 0.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(224, 224, 224, 0.39);
+  cursor: pointer;
+}
+
+.app__card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.app__card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.app__card-content h3 {
+  padding: 0.2rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .app__card {
+    margin: 0.5rem;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app__card {
+    margin: 1rem;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app__card {
+    margin: 1rem 0;
+  }
+}

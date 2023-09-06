@@ -1,0 +1,51 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.app__navbar-logo {
+  color: #8da43d;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  margin: 0 auto 10px;
+  cursor: pointer;
+}
+
+.app__navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.39);
+  border-top: 1px solid rgba(224, 224, 224, 0.39);
+  padding: 0.5rem 0;
+}
+
+.app__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app__navbar-links a,
+.app__navbar-links a:link,
+.app__navbar-links a:visited {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+.app__navbar-links a:hover {
+  color: #c0341b;
+}
+
+@media screen and (max-width: 400px) {
+  .app__navbar-logo {
+    font-size: 24px;
+  }
+}
