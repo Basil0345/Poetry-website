@@ -44,6 +44,10 @@
   color: #c0341b;
 }
 
+.app__navbar-links a.active {
+  color: #c0341b;
+}
+
 @media screen and (max-width: 400px) {
   .app__navbar-logo {
     font-size: 24px;

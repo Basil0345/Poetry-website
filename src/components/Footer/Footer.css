@@ -7,6 +7,13 @@
 }
 
 .app__footer-social a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.65);
   transition-delay: 0.1s;
@@ -20,13 +27,24 @@
   color: #1877f2;
 }
 .app__footer-social a:nth-child(3):hover {
-  color: #26a7de;
+  color: black;
 }
 
 .icon {
-  margin: 0 0.3rem;
+  margin: 0 0.2rem;
 }
 
-.app__footer-social p {
-  color: rgba(0, 0, 0, 0.65);
+.app__footer p {
+  user-select: none;
+}
+
+.copyright {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 430px) {
+  .copyright {
+    font-size: 0.89rem;
+  }
 }

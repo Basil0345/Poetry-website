@@ -10,3 +10,9 @@
   line-height: 28px;
   font-size: 16px;
 }
+
+@media screen and (min-width: 1080px) {
+  .app {
+    padding: 3rem 3rem;
+  }
+}

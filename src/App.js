@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Poems from './pages/Poem/Poems';
+import Posts from './pages/Posts/posts';
+import Post from './pages/Post/Post';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route element={<Home />} path='/' />
           <Route element={<About />} path='/about' />
           <Route element={<Contact />} path='/contact' />
-          <Route element={<Poems />} path='/poems' />
+          <Route element={<Posts />} path='/poems' />
+          <Route element={<Post />} path='/poems/:slug' />
         </Routes>
         <Footer />
       </Router>

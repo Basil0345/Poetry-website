@@ -1,0 +1,71 @@
+.app__post {
+  padding: 1.3rem 3.5rem;
+  padding-top: 0;
+  min-height: calc(100vh - 169px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.app__post h1 {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 1.3rem;
+}
+
+.app__post-content {
+  line-height: 1.5rem;
+}
+
+.app__post-content p {
+  font-size: 1.1rem;
+}
+
+.app__post-signature {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+.app__post-signature img {
+  width: 100%;
+  object-fit: contain;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .app__post {
+    padding: 0.5rem 0;
+  }
+  .app__post-content p {
+    font-size: 1rem;
+  }
+  .app__post-signature {
+    width: 145px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__post h1 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .app__post-content p {
+    font-size: 0.89rem;
+  }
+  .app__post-signature {
+    width: 130px;
+  }
+}

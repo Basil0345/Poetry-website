@@ -1,7 +1,10 @@
+import loading from "../assets/loading.gif";
 import Aibel from "../assets/Aibel.jpg";
-import bg from "../assets/bg.jpg";
+import signature from "../assets/signature.png";
 
-export default {
+const images = {
+    loading,
     Aibel,
-    bg
+    signature
 }
+export default images;

@@ -1,8 +1,6 @@
 .app__about {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
   padding: 1.3rem 3.5rem;
   min-height: calc(100vh - 169px);
 }
@@ -10,8 +8,8 @@
 .app__about-img {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .app__about-img img {
@@ -20,12 +18,17 @@
 }
 
 .app__about-content {
-  padding: 0.5rem 2rem;
-  flex: 2;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  white-space: pre-line;
+  font-size: large;
 }
 
-.app__about-content p {
-  margin-bottom: 28px;
+@media screen and (max-width: 900px) {
+  .app__about-content {
+    padding-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -35,18 +38,30 @@
   }
 
   .app__about-img {
+    align-items: center;
+  }
+
+  .app__about-img img {
+    width: 350px;
+  }
+
+  .app__about-content {
+    justify-content: center;
     padding: 0;
-    width: 100%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
   .app__about-img img {
-    margin-top: 1.5rem;
     width: 290px;
   }
+
   .app__about-content {
-    padding: 0;
-    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .app__about-content p {
+    font-size: 0.89rem;
   }
 }

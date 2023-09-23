@@ -13,22 +13,41 @@
   text-align: center;
   color: black;
   text-transform: capitalize;
-  margin-bottom: 1.5rem;
 }
 
-.app__home-img {
-  width: 320px;
-  cursor: pointer;
-}
-
-img {
-  display: block;
+.app__home-imgcard {
+  margin-top: 2rem;
+  max-width: 320px;
   width: 100%;
   object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 400px) {
-  .app__home-img {
-    /* width: 250px; */
+@media screen and (max-width: 1024px) {
+  .app__home-imgcard {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app__home {
+    padding: 0.5rem 0rem;
+  }
+  .app__home-imgcard {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__home {
+    padding: 0;
+  }
+
+  .app__home h1 {
+    font-size: 2rem;
+  }
+  .app__home-imgcard {
+    max-width: 290px;
   }
 }
